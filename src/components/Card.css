@@ -1,0 +1,32 @@
+.cardItem {
+    position: relative;
+    margin: 2px;
+}
+
+.cardItem img {
+    /*width: 100%;*/
+    display: block;
+    border: 1px solid yellow;
+    border-radius: 6px;
+}
+
+.cardItem .card-image-front {
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+    position: absolute;
+}
+
+.flipped .card-image-front {
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+.cardItem .card-image-back {
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+.flipped .card-image-back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
